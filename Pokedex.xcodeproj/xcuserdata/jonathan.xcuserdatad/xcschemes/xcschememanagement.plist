@@ -7,7 +7,25 @@
 		<key>Pokedex.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>AB2A30E223319C9A006795C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB2A30F823319C9C006795C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB2A310323319C9C006795C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

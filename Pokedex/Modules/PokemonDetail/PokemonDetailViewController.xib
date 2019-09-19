@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PokemonDetailViewController" customModule="Pokedex" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="dVe-iK-p5Q" id="gQG-S4-ATd"/>
+                <outlet property="backgroundColor" destination="Aqk-Mw-V7V" id="FWI-fG-WfQ"/>
+                <outlet property="nameLabel" destination="eDd-D1-tFQ" id="2rE-VS-wj3"/>
+                <outlet property="pokemonImageView" destination="edn-EI-XZJ" id="Svq-dp-Sr2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aqk-Mw-V7V">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="144" id="YVZ-9h-QPh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVe-iK-p5Q">
+                    <rect key="frame" x="0.0" y="44" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="AUZ-I4-2UX"/>
+                        <constraint firstAttribute="height" constant="44" id="e4X-9M-WhN"/>
+                    </constraints>
+                    <state key="normal" image="chevron.left" catalog="system"/>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edn-EI-XZJ">
+                    <rect key="frame" x="147" y="84" width="120" height="120"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="TxN-Rn-QUL"/>
+                        <constraint firstAttribute="width" constant="120" id="qRl-vj-5fq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDd-D1-tFQ">
+                    <rect key="frame" x="22" y="226" width="370" height="0.0"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dVe-iK-p5Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="06D-tR-X7c"/>
+                <constraint firstItem="edn-EI-XZJ" firstAttribute="centerY" secondItem="Aqk-Mw-V7V" secondAttribute="bottom" id="BX5-Zu-b44"/>
+                <constraint firstItem="eDd-D1-tFQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="Ccz-wW-ZiN"/>
+                <constraint firstItem="Aqk-Mw-V7V" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="O8I-xR-Vok"/>
+                <constraint firstItem="eDd-D1-tFQ" firstAttribute="top" secondItem="edn-EI-XZJ" secondAttribute="bottom" constant="22" id="P2A-mu-ajK"/>
+                <constraint firstItem="edn-EI-XZJ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="QSB-Ib-KX4"/>
+                <constraint firstItem="dVe-iK-p5Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RHc-Vm-Ggk"/>
+                <constraint firstAttribute="trailing" secondItem="Aqk-Mw-V7V" secondAttribute="trailing" id="VZe-1u-58J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eDd-D1-tFQ" secondAttribute="trailing" constant="22" id="edr-CI-9jD"/>
+                <constraint firstItem="Aqk-Mw-V7V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vkB-6U-vQV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.left" catalog="system" width="46" height="64"/>
+    </resources>
+</document>
